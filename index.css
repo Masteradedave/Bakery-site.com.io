@@ -1,0 +1,171 @@
+@import url('./node_modules/bootstrap/dist/css/bootstrap.min.css');
+
+body {
+     background-image: url(./images\ \(5\).jpeg);
+     background-repeat: repeat;
+     z-index: -1;
+     position: absolute;
+     animation-name: forever;
+     animation-duration: 20s;
+     animation-fill-mode: both;
+     animation-iteration-count: infinite;
+}
+
+@keyframes forever {
+    0%{background-image: url(./images\ \(5\).jpeg);}
+    10%{background-image: url(./images\ \(6\).jpeg);}
+    20%{background-image: url(./images\ \(7\).jpeg);}
+    30%{background-image: url(./images\ \(8\).jpeg);}
+    40%{background-image: url(./images\ \(9\).jpeg);}
+    50%{background-image: url(./images\ \(10\).jpeg);}
+    60%{background-image: url(./images\ \(11\).jpeg);}
+    70%{background-image: url(./images\ \(12\).jpeg);}
+    80%{background-image: url(./images\ \(13\).jpeg);}
+    90%{background-image: url(./images\ \(14\).jpeg);}
+    100%{background-image: url(./images\ \(15\).jpeg);}
+}
+
+span {
+    color:coral;
+    font-family: cursive;
+}
+
+nav{
+    background: #0082e4;
+    height: 80px;
+    width: 100%;
+    border-top: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 8px solid #0082e4;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height:80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: coral;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a.active{
+    background-color: white;
+}
+
+a:hover {
+    background-color: coral;
+    color: white;
+}
+
+.sec { 
+ color: white;
+ background: rgba(255, 127, 80,0.7);
+ backdrop-filter: blur(2px);
+ -webkit-backdrop-filter: blur(2px);
+ border: 1px solid rgba(58, 181, 52, 0);
+ font-family:serif;
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 260px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+}
+
+.flip-card {
+    display: inline-block;
+    margin: 1px;
+    margin-left: 20px;
+}
+
+.title{
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style:preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back{
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid coral;
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+    background: linear-gradient 
+     (120deg,bisque 60%,rgb(255,231,222)88%,
+     rgb(211, 211, 195)40%,rgba(255, 127, 80, 0.603)48%);
+    color: coral;
+}
+
+.flip-card-back {
+    background: linear-gradient(120deg, rgb(255,174,145) 30%, coral 88%,
+     bisque 40%, rgb(255,185,160)78%);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+footer {
+    background-color: #0082e4;
+    border: 5px solid coral;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-justify: auto;
+}
+
+.flip-card-2{
+    text-align: left;  
+}
+
+.fs2,a {
+    color :black;
+}
